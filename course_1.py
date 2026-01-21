@@ -15,15 +15,15 @@ my_float = 3.14
 my_str = "On est en cours de python"
 my_bool = True
 
-print(my_number)
-print(my_float)
-print(my_str)
-print(my_bool)
+# print(my_number)
+# print(my_float)
+# print(my_str)
+# print(my_bool)
 
-print(type(my_number))
-print(type(my_float))
-print(type(my_str))
-print(type(my_bool))
+# print(type(my_number))
+# print(type(my_float))
+# print(type(my_str))
+# print(type(my_bool))
 
 #-------------------------------------
 # 2 - Les opération
@@ -34,49 +34,89 @@ b = 3
 
 # Les opération arithmétiques
 
-print(a + b) # addition
-print(a - b) # soustraction
-print(a * b) # multiplication
-print(a / b) # divsion
-print(a // b) # divsion arrondi
-print(a % b) # modulo
+# print(a + b) # addition
+# print(a - b) # soustraction
+# print(a * b) # multiplication
+# print(a / b) # divsion
+# print(a // b) # divsion arrondi
+# print(a % b) # modulo
 
 # Les opération de comparaison
-print(a == b) # égale : il faut avoir la même valeur et le même type
-print(a > b) # supérieur
-print(a < b) # inferieur
-print(a >= b) # superieur ou égal
-print(a <= b) # inférieur ou égal
+# print(a == b) # égale : il faut avoir la même valeur et le même type
+# print(a > b) # supérieur
+# print(a < b) # inferieur
+# print(a >= b) # superieur ou égal
+# print(a <= b) # inférieur ou égal
 
 my_number = 12
 my_string = "12"
-print(my_number == my_string) # False
+# print(my_number == my_string) # False
 
 # Opération de logique
-print("Les Opérations de logique")
-print(not False)
-print(False or True)
-print(True and False)
-print(True or (False and True))
+# print("Les Opérations de logique")
+# print(not False)
+# print(False or True)
+# print(True and False)
+# print(True or (False and True))
 
 #-------------------------------------
 # 2 - Les conditions
 #--------------------------------------
 
-if a == b:
-    print("a est egal b")
-    print("on est dans le if")
-else:
-    print("a n'est pas egal à b")
-    print("on est dans le else")
-print("fin de condition")
+# if a == b:
+#     print("a est egal b")
+#     print("on est dans le if")
+# else:
+#     print("a n'est pas egal à b")
+#     print("on est dans le else")
+# print("fin de condition")
 
-firstname = input("firstname : ")
+# firstname = input("firstname : ")
 
-age = input("age : ")
-print(type(age))
-converted_age = int(age)
-print(type(converted_age))
+# age = input("age : ")
+# print(type(age))
+# converted_age = int(age)
+# print(type(converted_age))
+#
+# print("le prénom est : " + firstname)
+# print("fin de programme")
 
-print("le prénom est : " + firstname)
-print("fin de programme")
+#---------------------------------
+# CHAINES DE CHARACTERES (str)
+#---------------------------------
+
+#concaténation
+first_name = "Billel"
+last_name = "ABBES"
+full_name = first_name + " " + last_name
+print(full_name)
+
+message = "Bonjour " + first_name
+print(message)
+
+age = 30
+message = f"Je m'appelle {full_name} et j'ai {age} ans"
+print(message)
+
+message = f"la somme de 1 + 1 = {1 + 1}"
+print(message)
+
+print(f"True or False est : {True or False}")
+
+text = "On est en cours de Python"
+print(len(text))
+# print(text[-1])
+# print(text[18:25])
+# print(text[:7])
+# print(text[18:])
+# print(text[-6:])
+print(text[:3])
+
+print("Python" in text)
+
+print(text.upper())
+print(text.lower())
+print(text.capitalize())
+print(text.title())
+
+print(text.isupper())
