@@ -8,39 +8,39 @@
 
 numbers = [10, 16, 33, 40, 33]
 
-print(len(numbers))        # nombre d’éléments
-print(numbers[1])          # accès par index
+# print(len(numbers))        # nombre d’éléments
+# print(numbers[1])          # accès par index
 
 # Ajouter un élément à la fin
 numbers.append(88)
-print(numbers)
+# print(numbers)
 
 # Insérer un élément à un index précis
 numbers.insert(2, 50)
-print(numbers)
+# print(numbers)
 
 # Supprimer une valeur (première occurrence)
 numbers.remove(33)
-print("Après remove :", numbers)
+# print("Après remove :", numbers)
 
 # Supprimer une valeur seulement si elle existe
 val = 40
 if val in numbers:
     numbers.remove(val)
-print(numbers)
+# print(numbers)
 
 # Supprimer le dernier élément
 numbers.pop()
-print(numbers)
+# print(numbers)
 
 # Supprimer un élément par index
 numbers.pop(1)
-print(numbers)
+# print(numbers)
 
 # Fonctions intégrées
-print(sum(numbers))
-print(min(numbers))
-print(max(numbers))
+# print(sum(numbers))
+# print(min(numbers))
+# print(max(numbers))
 
 
 # --------------------------------------
@@ -49,19 +49,20 @@ print(max(numbers))
 
 days = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
 
-for day in days:
-    if day in ["Samedi", "Dimanche"]:
-        print("Week-end")
-    else:
-        print(day)
+# for day in days:
+#     if day in ["Samedi", "Dimanche"]:
+#         print("Week-end")
+#
+#     else:
+#         print(day)
 
 
 # --------------------------------------
 # BOUCLE FOR AVEC range
 # --------------------------------------
 
-for i in range(1, 5):
-    print("Bonjour :", i)
+# for i in range(1, 5):
+#     print("Bonjour :", i)
 
 
 # --------------------------------------
@@ -74,7 +75,7 @@ val_a_supprimer = 44
 while val_a_supprimer in tab:
     tab.remove(val_a_supprimer)
 
-print(tab)
+# print(tab)
 
 
 # --------------------------------------
@@ -83,10 +84,10 @@ print(tab)
 
 i = 0
 while i < len(tab):
-    print("On est dans la boucle")
+    # print("On est dans la boucle")
     i += 1
 
-print("Sortie de la boucle")
+# print("Sortie de la boucle")
 
 
 # --------------------------------------
@@ -95,8 +96,8 @@ print("Sortie de la boucle")
 
 tab_mix = [12, "Bleu", True]
 
-for val in tab_mix:
-    print(f"{val} est de type {type(val)}")
+# for val in tab_mix:
+#     print(f"{val} est de type {type(val)}")
 
 
 # --------------------------------------
@@ -105,5 +106,38 @@ for val in tab_mix:
 
 i = len(days) - 1
 while i >= 0:
-    print(days[i])
+    # print(days[i])
     i -= 1
+
+user = {
+    "name" : "David",
+    "age" : 19,
+    "languages" : ["fr", "eng", "de"],
+    "address" : {
+        "rue" : "19 rue de la république",
+        "ville" : "Paris",
+        "codePostale" : 75015
+    }
+}
+
+print (user["name"])
+print(user["languages"])
+print(user["languages"][1])
+print(user["address"]["ville"])
+
+user["age"] = 20
+print(user["age"])
+
+user["languages"].append("chinois")
+print(user["languages"])
+user["languages"].remove("de")
+print(user["languages"])
+user["address"]["pays"] = "france"
+print(user["address"])
+
+user["address"].pop("codePostale")
+print(user["address"])
+
+days = ["samedi", "dimanche", "lundi"]
+# days.pop(1)
+days.remove("dimanche")
